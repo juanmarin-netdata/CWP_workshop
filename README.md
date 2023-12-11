@@ -1,12 +1,12 @@
 # Scripts de Configuración de Clúster Kubernetes
 
-Este repositorio contiene scripts Bash para configurar un clúster Kubernetes, ideal para la automatización y gestión de aplicaciones en contenedores.
+Este repositorio contiene los Bash Scripts necesarios para configurar un clúster de Kubernetes en su versión 1.27, ideal para la automatización y gestión de aplicaciones en contenedores.
 
 ## Scripts
 
-1. `init_cluster.sh`: Inicializa un clúster Kubernetes, configura `kubectl`, instala Calico y verifica los nodos.
-2. `install_kubernetes.sh`: Prepara el sistema para Kubernetes, instala componentes clave y previene actualizaciones automáticas.
-3. `setup_containerd.sh`: Configura Containerd con ajustes de kernel y red para Kubernetes.
+1. `setup_containerd.sh`: Configura Containerd con ajustes de kernel y red para Kubernetes en cada servidor.
+2. `install_kubernetes.sh`: Prepara el sistema para Kubernetes, instala componentes clave y previene actualizaciones automáticas en cada servidor.
+3. `init_cluster.sh`: Inicializa un clúster Kubernetes, configura `kubectl`, instala Calico y verifica los nodos.
 
 ## Uso
 
