@@ -1,27 +1,34 @@
-# Kubernetes Cluster Setup Scripts
+# Scripts de Configuración de Clúster Kubernetes
 
-This repository contains a collection of Bash scripts for setting up a Kubernetes cluster.
+Este repositorio contiene scripts Bash para configurar un clúster Kubernetes, ideal para la automatización y gestión de aplicaciones en contenedores.
 
 ## Scripts
 
-1. `init_cluster.sh` - Initializes a Kubernetes cluster, sets up `kubectl` for the user, installs Calico for networking, and verifies the nodes.
-2. `install_kubernetes.sh` - Disables swap, adds the Kubernetes GPG key and repository, installs specific versions of Kubernetes components (`kubelet`, `kubeadm`, `kubectl`), and disables their automatic updates.
-3. `setup_containerd.sh` - Sets up Containerd, configures kernel modules and network parameters for Kubernetes, installs and configures Containerd, and verifies its status.
+1. `init_cluster.sh`: Inicializa un clúster Kubernetes, configura `kubectl`, instala Calico y verifica los nodos.
+2. `install_kubernetes.sh`: Prepara el sistema para Kubernetes, instala componentes clave y previene actualizaciones automáticas.
+3. `setup_containerd.sh`: Configura Containerd con ajustes de kernel y red para Kubernetes.
 
-## Usage
+## Uso
 
-Run the scripts in the following order:
-1. `setup_containerd.sh`
-2. `install_kubernetes.sh`
-3. `init_cluster.sh`
+Sigue estos pasos:
+1. Ejecuta `setup_containerd.sh`.
+2. Ejecuta `install_kubernetes.sh`.
+3. Ejecuta `init_cluster.sh`.
 
-Ensure you have root or sudo privileges for executing these scripts.
+## Prerrequisitos
 
-## Prerequisites
+- **Sistema Operativo**: Linux.
+- **Conocimientos**: Administración de sistemas Linux y contenedores.
+- **Herramientas**: `curl`, `sudo`, terminal.
+- **Red**: Conexión a internet.
+- **Permisos**: Privilegios de superusuario o `sudo`.
+- **Hardware**: Al menos dos servidores, uno para el Control Plane y otro como Worker Node.
 
-- A Linux system
-- Access to the internet
-- Sudo privileges
+## Notas Adicionales
 
-For detailed information on each script, refer to the comments within the scripts.
+- **Kubernetes**: Orquestador de contenedores para la administración de aplicaciones.
+- **Containerd**: Plataforma de ejecución de contenedores.
+
+Consulta los comentarios en cada script para más detalles.
+
 
