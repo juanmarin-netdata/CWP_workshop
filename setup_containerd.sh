@@ -21,7 +21,7 @@ EOF
 sudo sysctl --system
 
 # Instalar containerd
-sudo apt-get update && sudo apt-get install -y containerd.io
+sudo apt-get update && sudo apt-get install -y containerd
 
 # Crear archivo de configuración predeterminado para containerd
 sudo mkdir -p /etc/containerd
